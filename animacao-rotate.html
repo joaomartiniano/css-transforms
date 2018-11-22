@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Transformações CSS</title>
+    <style>
+        html, body { font-size: 100%; margin: 0; padding: 1rem 2em; }
+        body { font-family: 'Calibri', sans-serif; }
+		h1 { margin: 0 0 3rem 0; font-size: 1.4rem; }
+
+		.quadrado { width: 200px; height: 200px; border: 1px solid #fff; background-color: rgb(25, 120, 184); color: #fff; padding: 0.1rem 0.2rem; 
+					animation-name: rotate; animation-duration: 2.5s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes rotate
+		{
+			from { transform: rotate(0);  }
+			to { transform: rotate(90deg); }
+		}
+    </style>
+</head>
+<body>
+	<h1>Demonstração de animação utilizando <code>transform: rotate()</code></h1>
+
+	<div class="quadrado">rotate()</div>
+</body>
+</html>

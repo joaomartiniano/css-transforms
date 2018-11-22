@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Transformações CSS</title>
+    <style>
+        html, body { font-size: 100%; margin: 0; padding: 1rem 2em; }
+        body { font-family: 'Calibri', sans-serif; }
+		h1 { margin: 0 0 3rem 0; font-size: 1.4rem; }
+		p { margin: 2rem 0; }
+
+		/* Utilização da função scale() */
+		.maquina1 { border: 5px solid #ececec;  
+				  animation-name: scale1; animation-duration: 2.5s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes scale1
+		{
+			from { transform: scale(1, 1);  }
+			to { transform: scale(2, 2); }
+		}
+
+		/* Utilização da função scaleX() */
+		.maquina2 { border: 5px solid #ececec;  
+				  animation-name: scale2; animation-duration: 2.5s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes scale2
+		{
+			from { transform: scaleX(1); }
+			to { transform: scaleX(0.2); }
+		}
+
+		/* Utilização da função scaleY() */
+		.maquina3 { border: 5px solid #ececec;  
+				  animation-name: scale3; animation-duration: 2.5s; animation-timing-function: linear; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes scale3
+		{
+			from { transform: scaleY(1); }
+			to { transform: scaleY(0.2); }
+		}
+    </style>
+</head>
+<body>
+	<h1>Demonstração de animação utilizando <code>transform: scale()</code></h1>
+
+	<!-- Utilização da função scale() -->
+	<p>
+		<img class="maquina1" src="img/maquina.jpg" />
+	</p>
+
+	<!-- Utilização da função scaleX() -->
+	<p>
+		<img class="maquina2" src="img/maquina.jpg" />
+	</p>
+
+	<!-- Utilização da função scaleY() -->
+	<p>
+		<img class="maquina3" src="img/maquina.jpg" />
+	</p>
+
+</body>
+</html>

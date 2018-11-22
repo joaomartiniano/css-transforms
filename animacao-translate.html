@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Transformações CSS</title>
+    <style>
+        html, body { font-size: 100%; margin: 0; padding: 1rem 2em; }
+        body { font-family: 'Calibri', sans-serif; }
+		h1 { margin: 0 0 3rem 0; font-size: 1.4rem; }
+
+		.automovel { animation-name: translate; animation-duration: 3.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes translate
+		{
+			from { transform: translateX(0); }
+			to { transform: translateX(70vw); }
+		}
+    </style>
+</head>
+<body>
+	<h1>Demonstração de animação utilizando <code>transform: translate()</code></h1>
+
+	<img class="automovel" src="img/automovel.png" />
+</body>
+</html>

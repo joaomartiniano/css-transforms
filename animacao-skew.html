@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Transformações CSS</title>
+    <style>
+        html, body { font-size: 100%; margin: 0; padding: 1rem 2em; }
+        body { font-family: 'Calibri', sans-serif; }
+		h1 { margin: 0 0 3rem 0; font-size: 1.4rem; }
+
+		/* Utilização da função skewX() */
+		.imagem1 { animation-name: skew1; animation-duration: 3.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes skew1
+		{
+			from { transform: skewX(0); }
+			to { transform: skewX(30deg); }
+		}
+
+		/* Utilização da função skewY() */
+		.imagem2 { animation-name: skew2; animation-duration: 3.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes skew2
+		{
+			from { transform: skewY(0); }
+			to { transform: skewY(30deg); }
+		}
+
+		/* Utilização das funções skewX() e skewY() */
+		.imagem3 { animation-name: skew3; animation-duration: 3.5s; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+
+		@keyframes skew3
+		{
+			from { transform: skewX(0) skewY(0); }
+			to { transform: skewX(30deg) skewY(30deg); }
+		}
+    </style>
+</head>
+<body>
+	<h1>Demonstração de animação utilizando <code>transform: skewX() e skewY()</code></h1>
+	
+	<!-- Utilização da função skewX() -->
+	<p>
+		<img class="imagem1" src="img/coelho2.jpg" />
+	</p>
+
+	<!-- Utilização da função skewY() -->
+	<p>
+		<img class="imagem2" src="img/coelho2.jpg" />
+	</p>
+
+	<!-- Utilização das funções skewX() e skewY() -->
+	<p>
+		<img class="imagem3" src="img/coelho2.jpg" />
+	</p>
+</body>
+</html>
