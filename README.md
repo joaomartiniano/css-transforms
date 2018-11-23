@@ -1,6 +1,6 @@
-# Transformações CSS (_CSS transforms_)
+# CSS Transforms (transformações CSS)
 
-Ficheiros utilizados nos seguintes dois vídeos explicativos sobre transformações CSS:
+Ficheiros utilizados nos seguintes vídeos que abordam esta tecnologia da linguagem CSS:
 
-- <hiperligação>: demonstra o que são transformações CSS
-- <hiperligação>: demonstra a utilização de transformações CSS em animações CSS (_CSS animations_)
+- [CSS Transforms](https://youtu.be/hWFLflNFSjc): introdução às CSS transforms
+- Animação CSS com recurso a CSS transforms: utilização de CSS transforms em animações CSS
